@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script type="text/javascript">
+            function sendEmail() {
+                Email.send({
+                    Host: "smtp.mailtrap.io",
+                    Username: "f02b4327fe7bf2",
+                    Password: "8a7612c17e17e7",
+                    To: 'gachpeter2@gmail.com',
+                    From: "gachpetere2@gmail.com",
+                    Subject: "TEst",
+                    Body: "How are you doing"
+                }).then(function (message) {
+                    alert("mail sent successfully")
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <form method="post">
+            <input type="button" value="Send Email" onclick="sendEmail()"/>
+        </form>
+    </body>
+</html>

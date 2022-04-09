@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact | Eagle Eye
+        </title>
+        <script src="./script.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+emailjs.init("9n5viy8T23vRfj4Kp");
+            })();
+        </script>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <link rel="shortcut icon" href="./images/logo.svg" type="image/svg">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-light" style="background-color:darkorange;">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="" srcset=""></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mt-2 mx-auto">
+                        <li class="nav-item">
+                            <a id="a" class="nav-link l mdl-button mdl-button--raised" href="./index.html">Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a id="a" class="nav-link l mdl-button mdl-button--raised" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link l mdl-button mdl-button--raised" style="color:darkorange;background-color:white;" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="a" class="nav-link l  mdl-button mdl-button--raised" href="./services.html">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <img src="./images/Contact Us@2x (2).png" height="50px" class="my-2" alt="" srcset=""/>
+        </div>
+        <div class="container card p-2">
+            <div class="row ">
+                <div class="col-12 col-md-5" style="background-color: darkorange;">
+                    <img src="./images/logo.svg" height="400px" alt="" class="mx-auto">
+                </div>
+                <div class="col-12 col-md-7 my-5 p-2">
+                    <h2 style="color: darkorange;text-align: center;">CONTACT FORM</h2>
+                    <br/>
+                    <section style="max-width: 300px;text-align: center;" class="mx-auto">
+                        <label>Name
+                            <input type="text" placeholder="Name" id="name" class="form-control"></label>
+                        <label>Phone
+                            <input type="tel" placeholder="Phone" id="phone" class="form-control"></label>
+                            <label>Email
+                                <input type="email" placeholder="Email" id="email" class="form-control"></label>
+                        <label>Subject<input type="text" placeholder="Reason" id="reason" class="form-control"></label>
+                  
+                        <div class="form-group">
+                            <label>Message
+                                <textarea id="message" class=" form-control" name=" " id=" " rows=" 3"></textarea>
+                            </label><br/>
+                            <button onclick="sendMail()" class="mdl-button mdl-button--raised mdl-ripple-effect ">Submit</button>
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <hr style="color: darkorange;"/>
+            <footer>
+                <div class="row">
+                    <div class="col-12 p-2 col-md-1" style="background:darkorange"><img src="./images/logo.svg" alt="" srcset=""></div>
+                    <div class="col-11">
+                        <a href="#">Home</a>
+                        <a href="./services.html">Services</a>
+                        <a href="./about.html">About</a>
+                        <a href="./contact.html">Contact</a>
+
+
+                        <span>
+                            <small class="material-icons">
+                                <svg style="width:24px;height:24px" viewbox="0 0 24 24">
+                                    <path fill="currentColor" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                </svg>
+                            </small>Flour 4 No.7 Kwitisa,Nile Street Khartoum Sudan</span>
+                        <br>
+                        <a class="mdl-button mdl-button-primary" href="mailto:info@eigleeye.com">
+                            <i class="material-icons">mail</i>info@eigleeye.com</a>
+                        <a class="mdl-button mdl-button-success" href="telto:+24912666681">
+                            <i class="material-icons">phone</i>
+                            +24912666681
+                        </a>
+                        <a class="mdl-button mdl-button-success" href="telto:+249123136681">
+                            <i class="material-icons">phone</i>
+                            +249123136681
+                        </a>
+                        <a class="mdl-button mdl-button-success" href="telto:+249912666681">
+                            <i class="material-icons">phone</i>
+                            +249912666681
+                        </a>
+                        <p>Eagleeye &copy 2022</p>
+                    </div>
+                </footer>
+            </div>
+            <br/><br/>
+            <script src="./sendemail.js"></script>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+        </body>
+    </body>
+</html>
